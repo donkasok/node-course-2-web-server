@@ -46,6 +46,14 @@ app.get('/about', (req, res)=>{
         pageTitle: 'About Page'
     });
 });
+app.get('/project', (req, res) => {
+    res.render('project.hbs', {
+        pageTitle: 'Portfolio Page',
+        welcomeMessage: 'List of portfolio'
+    })
+    
+
+})
 
 app.get('/bad', (req, res)=>{
     res.send({
